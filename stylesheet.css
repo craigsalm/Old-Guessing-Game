@@ -1,3 +1,8 @@
+body {
+    background-image: url("paper.gif");
+}
+/*having trouble getting background-image to work*/
+
 p {
 	font-family: cursive;
 	font-size: 20px;
