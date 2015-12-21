@@ -1,18 +1,29 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<link type="text/css" rel="stylesheet" href="FSA-Part-1-Guessing-Game-Part-1---HTML-CSS/stylesheet.css"/>
+		<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+		<script src="guessingGame.js"></script>
 		<title>Guessing Game</title>
 	</head>
 	<body>
-		<img src = "http://www.modernmom.com/wp-content/uploads/2014/09/fotolia_7505701_XS.jpg">
 		<form action=[placeholder] align="center">
-			Guess a Number<br>
-			<input type="text" <br>
+			<br>Guess a Number</br>
+			<input type="text" id="input">
+			<br>
+			<br>
 				<div>
-				<input type="submit" value="Guess">
-				<input type="submit" value="Give me a Hint">
+				<button type='button' id="guess">Guess</button>
+				<button type='button' id="hint">Give me a hint</button>
+					<br>
+					<br>
+				<button type='button' id="reset">Play Again</button>
 				</div>
+				<div class='guess'></div>
+				<div class='message'></div>
+				<div class="signature">By Craig Salm</div>
+				<div class='guesses'>Guessed Numbers</div>
 		</form>
 	</body>
 </html>
