@@ -1,41 +1,35 @@
 body {
-    background-image: url("paper.gif");
+	padding-top : 200px;
 }
 /*having trouble getting background-image to work*/
 
 p {
-	font-family: cursive;
-	font-size: 20px;
+	font-family: arial;
+	font-size: 1.0em;
 	text-align: center;
 }
-a {
-	text-decoration: none;
-	font-family: cursive;
+
+form {
+	font-family: arial;
 	margin: auto;
-	color: white;
 }
-div input {
+button {
 	height: 50px;
-	width: 220px;
+	width: 145px;
 	margin: auto;
 	text-align: center;
-	font-size: 1.5em;
+	font-size: 1.0em;
 	border-color: grey;
 	background-color:grey;
 	border-radius: 18px;
-
+	outline: none;
 }
-form{
-	margin: auto;
-}
-img {
-	height: 300px;
-	width: 300px;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: auto;
-	margin-bottom: auto
 
+div.signature {
+	padding-top: 270px;
+	text-align: right;
+	font-family: cursive;
+	font-size: 10px;
+	color: black;
 }
 
