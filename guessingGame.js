@@ -49,6 +49,8 @@ function checkGuess(){
 	if (playersGuess === winningNumber){
 		$("div.guess").text("You've won! and it only took you " + guessCount + " guesses!").fadeIn('slow');
 		$('#reset').show();
+		$('div.message').text('');
+		$('div.guesses').text('');
 	}
 	else {
 		if (playersGuess in guessedNumbers){
@@ -75,9 +77,15 @@ function provideHint(){
 
 function playAgain(){
 	winningNumber = generateWinningNumber();
+	reset();
+}
+
+function reset(){
 	$('div.guess').text('');
 	$('div.message').text('');
+	$('div.guesses').text('');
 	$('#input').val("");
+	$("#reset").show()
 }
 
 function randomizeArray(arr) {
